@@ -28,7 +28,7 @@ npm test
 #### Examples
 
 ```javascript
-var weather = require('weather');
+var weather = require('weather-js');
 
 // Options:
 // search:     location name or zipcode
