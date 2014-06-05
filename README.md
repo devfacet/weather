@@ -48,37 +48,29 @@ weather.find({search: 'San Francisco, CA', degreeType: 'F'}, function(err, resul
       "lat": "37.7835152",
       "long": "-122.4169334",
       "timezone": "-7",
-      "alert": ""
+      "alert": "",
+      "degreetype": "F",
+      "imagerelativeurl": "http://wst.s-msn.com/i/en-us/"
     },
-    "degreetype": "F",
     "current": {
-      "temperature": "68",
-      "skycode": "32",
-      "skytext": "Clear",
-      "date": "2014-06-04",
-      "observationtime": "16:53:00",
+      "temperature": "65",
+      "skycode": "30",
+      "skytext": "Partly Cloudy",
+      "date": "2014-06-05",
+      "observationtime": "13:53:00",
       "observationpoint": "Oakland, Metro Oakland International Airport",
-      "feelslike": "68",
-      "humidity": "55",
-      "winddisplay": "14 mph WNW",
-      "day": "Wednesday",
-      "shortday": "Wed",
-      "windspeed": "14"
+      "feelslike": "65",
+      "humidity": "63",
+      "winddisplay": "16 mph NW",
+      "day": "Thursday",
+      "shortday": "Thu",
+      "windspeed": "16",
+      "imageUrl": "http://wst.s-msn.com/i/en-us/law/30.gif"
     },
     "forecast": [
       {
         "low": "53",
-        "high": "69",
-        "skycodeday": "30",
-        "skytextday": "Partly Cloudy",
-        "date": "2014-06-04",
-        "day": "Wednesday",
-        "shortday": "Wed",
-        "precip": "0"
-      },
-      {
-        "low": "54",
-        "high": "67",
+        "high": "66",
         "skycodeday": "28",
         "skytextday": "Mostly Cloudy",
         "date": "2014-06-05",
@@ -88,7 +80,7 @@ weather.find({search: 'San Francisco, CA', degreeType: 'F'}, function(err, resul
       },
       {
         "low": "53",
-        "high": "67",
+        "high": "66",
         "skycodeday": "30",
         "skytextday": "Partly Cloudy",
         "date": "2014-06-06",
@@ -98,9 +90,9 @@ weather.find({search: 'San Francisco, CA', degreeType: 'F'}, function(err, resul
       },
       {
         "low": "54",
-        "high": "74",
-        "skycodeday": "32",
-        "skytextday": "Sunny (Clear)",
+        "high": "70",
+        "skycodeday": "30",
+        "skytextday": "Partly Cloudy",
         "date": "2014-06-07",
         "day": "Saturday",
         "shortday": "Sat",
@@ -108,12 +100,22 @@ weather.find({search: 'San Francisco, CA', degreeType: 'F'}, function(err, resul
       },
       {
         "low": "54",
-        "high": "76",
-        "skycodeday": "32",
-        "skytextday": "Sunny (Clear)",
+        "high": "74",
+        "skycodeday": "34",
+        "skytextday": "Mostly Sunny",
         "date": "2014-06-08",
         "day": "Sunday",
         "shortday": "Sun",
+        "precip": "0"
+      },
+      {
+        "low": "54",
+        "high": "69",
+        "skycodeday": "30",
+        "skytextday": "Partly Cloudy",
+        "date": "2014-06-09",
+        "day": "Monday",
+        "shortday": "Mon",
         "precip": "0"
       }
     ]

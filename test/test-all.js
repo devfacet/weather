@@ -35,6 +35,7 @@ describe('weather', function() {
         expect(result[0]['location']).to.have.property('timezone', '-7');
         expect(result[0]['location']).to.have.property('alert').to.be.a('string');
         expect(result[0]['location']).to.have.property('degreetype', 'F');
+        expect(result[0]['location']).to.have.property('imagerelativeurl').to.be.a('string');
 
         expect(result[0]).to.have.property('current').to.be.a('object');
         expect(result[0]['current']).to.have.property('temperature');
@@ -51,6 +52,7 @@ describe('weather', function() {
         expect(result[0]['current']).to.have.property('day');
         expect(result[0]['current']).to.have.property('shortday');
         expect(result[0]['current']).to.have.property('windspeed');
+        expect(result[0]['current']).to.have.property('imageUrl');
 
         expect(result[0]).to.have.property('forecast').to.be.a('array');
         expect(result[0]['forecast']).to.have.property('length').to.be.above(0);
