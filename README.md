@@ -1,10 +1,8 @@
 ## Weather
+[![NPM][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
 
 [weather](http://github.com/cmfatih/weather) is a Node.js module for 
 obtaining weather information.  
-
-[![Build Status][travis-image]][travis-url] | [![NPM][npm-image]][npm-url]
----------- | ----------
 
 ### Installation
 
@@ -134,7 +132,6 @@ For all notable changes see [CHANGELOG.md](https://github.com/cmfatih/weather/bl
 
 ### License
 
-Copyright (c) 2014 Fatih Cetinkaya (http://github.com/cmfatih/weather)  
 Licensed under The MIT License (MIT)  
 For the full copyright and license information, please view the LICENSE.txt file.
 

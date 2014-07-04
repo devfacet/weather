@@ -1,6 +1,6 @@
 {
   "name": "weather-js",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Weather module can be used for obtaining weather information.",
   "keywords": [
     "weather",
@@ -23,17 +23,17 @@
   "contributors": [],
   "main": "lib/weather.js",
   "scripts": {
-    "test": "node ./node_modules/mocha/bin/mocha --reporter spec test/test-all.js"
+    "test": "node node_modules/mocha/bin/mocha --reporter spec test/test-all.js"
   },
   "engines": [
-    "node >= 0.10.21"
+    "node >= 0.10.0"
   ],
   "dependencies": {
     "request": "2.x",
     "xml2js": "0.4.x"
   },
   "devDependencies": {
-    "mocha": "*",
-    "chai": "*"
+    "mocha": "1.20.x",
+    "chai": "1.9.x"
   }
 }
