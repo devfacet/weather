@@ -9,17 +9,14 @@ var weather = require('../'),
 
 // Tests
 
-// Test for weather module
+// Test for the module
 describe('weather', function() {
 
   // Test for find
   describe('find()', function() {
     it('should find a location with weather information', function(done) {
       weather.find({search: 'San Francisco, CA', degreeType: 'F'}, function(err, result) {
-        if(err) {
-          done(err);
-          return;
-        }
+        if(err) return done(err);
 
         expect(err).to.be.equal(undefined);
 
@@ -72,10 +69,7 @@ describe('weather', function() {
 
     it('should find multiple locations with weather information', function(done) {
       weather.find({search: 'San Francisco', degreeType: 'F'}, function(err, result) {
-        if(err) {
-          done(err);
-          return;
-        }
+        if(err) return done(err);
 
         expect(err).to.be.equal(undefined);
 
@@ -88,10 +82,7 @@ describe('weather', function() {
 
     it('should fail to find a location (missing options)', function(done) {
       weather.find(null, function(err, result) {
-        if(!err) {
-          done('No error!');
-          return;
-        }
+        if(!err) return done('No error!');
         
         expect(result).to.be.equal(undefined);
 
