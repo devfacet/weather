@@ -29,7 +29,7 @@ describe('weather', function() {
         expect(result[0]['location']).to.have.property('zipcode', '94109');
         expect(result[0]['location']).to.have.property('lat', '37.7835152');
         expect(result[0]['location']).to.have.property('long', '-122.4169334');
-        expect(result[0]['location']).to.have.property('timezone', '-7');
+        expect(result[0]['location']).to.have.property('timezone').to.be.a('string');
         expect(result[0]['location']).to.have.property('alert').to.be.a('string');
         expect(result[0]['location']).to.have.property('degreetype', 'F');
         expect(result[0]['location']).to.have.property('imagerelativeurl').to.be.a('string');
@@ -83,7 +83,7 @@ describe('weather', function() {
     it('should fail to find a location (missing options)', function(done) {
       weather.find(null, function(err, result) {
         if(!err) return done('No error!');
-        
+
         expect(result).to.be.equal(undefined);
 
         done();
