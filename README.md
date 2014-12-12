@@ -1,19 +1,18 @@
 ## Weather
 [![NPM][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
 
-[weather](http://github.com/cmfatih/weather) is a Node.js module for 
-obtaining weather information.  
+[weather](http://github.com/cmfatih/weather) is a Node.js module for obtaining weather information.  
 
 ### Installation
 
-For latest release
 ```
+# For latest release
 npm install weather-js
-```
 
-For HEAD
-```
+# For HEAD
 git clone https://github.com/cmfatih/weather.git
+cd utilex
+npm install
 ```
 
 ### Usage

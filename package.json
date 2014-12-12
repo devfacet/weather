@@ -1,6 +1,6 @@
 {
   "name": "weather-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Weather module can be used for obtaining weather information.",
   "keywords": [
     "weather",
