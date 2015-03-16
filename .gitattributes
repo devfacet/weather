@@ -1,14 +1,3 @@
-# Git Attributes
-
-# Examples
-#
-#   text
-#   text eol=crlf
-#   text eol=lf
-#   text=auto
-#   binary
-#
-
 *       text=auto
 
 *.png   binary
@@ -26,5 +15,3 @@
 *.bat   text
 *.sh    text
 *.exe   binary
-
-*.go    text
