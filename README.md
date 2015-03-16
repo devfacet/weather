@@ -1,28 +1,16 @@
 ## Weather
+
 [![NPM][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
 
-[weather](http://github.com/cmfatih/weather) is a Node.js module for obtaining weather information.  
+Weather is a module for obtaining weather information.
 
 ### Installation
 
 ```
-# For latest release
 npm install weather-js
-
-# For HEAD
-git clone https://github.com/cmfatih/weather.git
-cd utilex
-npm install
 ```
 
 ### Usage
-
-#### Test
-```
-npm test
-```
-
-#### Examples
 
 ```javascript
 var weather = require('weather-js');
@@ -124,10 +112,6 @@ weather.find({search: 'San Francisco, CA', degreeType: 'F'}, function(err, resul
 ### Notes
 
 * It uses `weather.service.msn.com`
-
-### Changelog
-
-For all notable changes see [CHANGELOG.md](https://github.com/cmfatih/weather/blob/master/CHANGELOG.md)
 
 ### License
 
