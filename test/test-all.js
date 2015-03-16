@@ -1,7 +1,5 @@
-// Init reqs
 /* jslint node: true */
-/* global describe: false */
-/* global it: false */
+/* global describe: false, it: false */
 'use strict';
 
 var weather = require('../'),
@@ -9,10 +7,9 @@ var weather = require('../'),
 
 // Tests
 
-// Test for the module
 describe('weather', function() {
 
-  // Test for find
+  // find
   describe('find()', function() {
     it('should find a location with weather information', function(done) {
       weather.find({search: 'San Francisco, CA', degreeType: 'F'}, function(err, result) {
@@ -72,10 +69,8 @@ describe('weather', function() {
         if(err) return done(err);
 
         expect(err).to.be.equal(undefined);
-
         expect(result).to.be.a('array');
         expect(result).to.have.property('length').to.be.above(1);
-
         done();
       });
     });
@@ -85,9 +80,9 @@ describe('weather', function() {
         if(!err) return done('No error!');
 
         expect(result).to.be.equal(undefined);
-
         done();
       });
     });
   });
+
 });
