@@ -1,5 +1,9 @@
 ## Changelog
 
+### 1.0.2 (2015-03-15)
+
+* Misc. updates
+
 ### 1.0.1 (2014-12-12)
 
 * Change request url
