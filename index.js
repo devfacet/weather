@@ -46,7 +46,7 @@ module.exports = (function() {
       xmlParser.parseString(body, function(err, resultJSON) {
         if(err) return callback(err);
 
-        if(!resultJSON.weatherdata || !resultJSON.weatherdata.weather)
+        if(!resultJSON || !resultJSON.weatherdata || !resultJSON.weatherdata.weather)
           return callback('Unexpected error! Invalid content.');
 
         if(resultJSON.weatherdata.weather['A$'] && resultJSON.weatherdata.weather['A$'].errormessage)
