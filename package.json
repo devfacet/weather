@@ -1,39 +1,28 @@
 {
   "name": "weather-js",
   "version": "1.0.2",
-  "description": "Weather is a module for obtaining weather information.",
+  "description": "A module for obtaining weather information",
+  "main": "index.js",
+  "scripts": {
+    "test": "node node_modules/mocha/bin/mocha --reporter spec test/test-all.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devfacet/weather.git"
+  },
   "keywords": [
     "weather",
     "forecast"
   ],
-  "homepage": "http://github.com/cmfatih/weather",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/cmfatih/weather.git"
-  },
-  "bugs": {
-    "url": "http://github.com/cmfatih/weather/issues"
-  },
+  "author": "devfacet",
   "license": "MIT",
-  "private": false,
-  "author": {
-    "name": "cmfatih",
-    "url": "http://github.com/cmfatih"
-  },
-  "contributors": [],
-  "main": "lib/weather.js",
-  "scripts": {
-    "test": "node node_modules/mocha/bin/mocha --reporter spec test/test-all.js"
-  },
-  "engines": [
-    "node >= 0.10.0"
-  ],
+  "homepage": "http://github.com/devfacet/weather",
   "dependencies": {
-    "request": "2.x",
+    "request": "2.x.x",
     "xml2js": "0.4.x"
   },
   "devDependencies": {
-    "mocha": "2.2.x",
-    "chai": "2.1.x"
+    "mocha": "3.2.x",
+    "chai": "3.5.x"
   }
 }

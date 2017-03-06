@@ -11,6 +11,7 @@
 *.css   text
 *.js    text
 *.json  text
+*.go    text
 
 *.bat   text
 *.sh    text

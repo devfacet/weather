@@ -1,4 +1,4 @@
-/* jslint node: true */
+/* jslint node: true, sub: true */
 /* global describe: false, it: false */
 'use strict';
 
@@ -23,9 +23,8 @@ describe('weather', function() {
 
         expect(result[0]).to.have.property('location').to.be.a('object');
         expect(result[0]['location']).to.have.property('name', 'San Francisco, CA');
-        expect(result[0]['location']).to.have.property('zipcode', '94109');
-        expect(result[0]['location']).to.have.property('lat', '37.7835152');
-        expect(result[0]['location']).to.have.property('long', '-122.4169334');
+        expect(result[0]['location']).to.have.property('lat', '37.777');
+        expect(result[0]['location']).to.have.property('long', '-122.42');
         expect(result[0]['location']).to.have.property('timezone').to.be.a('string');
         expect(result[0]['location']).to.have.property('alert').to.be.a('string');
         expect(result[0]['location']).to.have.property('degreetype', 'F');

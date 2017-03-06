@@ -1,21 +1,21 @@
-## Changelog
+# Changelog
 
-### 1.0.2 (2015-03-15)
+## 1.0.2 (2015-03-15)
 
-* Misc. updates
+- Misc. updates
 
-### 1.0.1 (2014-12-12)
+## 1.0.1 (2014-12-12)
 
-* Change request url
+- Change request url
 
-### 1.0.0 (2014-07-04)
+## 1.0.0 (2014-07-04)
 
-* Stable release
+- Stable release
 
-### 0.1.1 (2014-06-05)
+## 0.1.1 (2014-06-05)
 
-* Add image url
+- Add image url
 
-### 0.1.0 (2014-06-04)
+## 0.1.0 (2014-06-04)
 
-* Initial release
+- Initial release

@@ -1,16 +1,16 @@
-## Weather
+# Weather
 
 [![NPM][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
 
 Weather is a module for obtaining weather information.
 
-### Installation
+## Installation
 
-```
+```bash
 npm install weather-js
 ```
 
-### Usage
+## Usage
 
 ```javascript
 var weather = require('weather-js');
@@ -29,79 +29,78 @@ weather.find({search: 'San Francisco, CA', degreeType: 'F'}, function(err, resul
   {
     "location": {
       "name": "San Francisco, CA",
-      "zipcode": "94109",
-      "lat": "37.7835152",
-      "long": "-122.4169334",
-      "timezone": "-7",
+      "lat": "37.777",
+      "long": "-122.42",
+      "timezone": "-8",
       "alert": "",
       "degreetype": "F",
-      "imagerelativeurl": "http://wst.s-msn.com/i/en-us/"
+      "imagerelativeurl": "http://blob.weather.microsoft.com/static/weather4/en-us/"
     },
     "current": {
-      "temperature": "65",
+      "temperature": "50",
       "skycode": "30",
-      "skytext": "Partly Cloudy",
-      "date": "2014-06-05",
-      "observationtime": "13:53:00",
-      "observationpoint": "Oakland, Metro Oakland International Airport",
-      "feelslike": "65",
-      "humidity": "63",
-      "winddisplay": "16 mph NW",
-      "day": "Thursday",
-      "shortday": "Thu",
-      "windspeed": "16",
-      "imageUrl": "http://wst.s-msn.com/i/en-us/law/30.gif"
+      "skytext": "Partly Sunny",
+      "date": "2017-03-05",
+      "observationtime": "16:35:00",
+      "observationpoint": "San Francisco, CA",
+      "feelslike": "45",
+      "humidity": "58",
+      "winddisplay": "13 mph West",
+      "day": "Sunday",
+      "shortday": "Sun",
+      "windspeed": "13 mph",
+      "imageUrl": "http://blob.weather.microsoft.com/static/weather4/en-us/law/30.gif"
     },
     "forecast": [
       {
-        "low": "53",
-        "high": "66",
-        "skycodeday": "28",
-        "skytextday": "Mostly Cloudy",
-        "date": "2014-06-05",
-        "day": "Thursday",
-        "shortday": "Thu",
-        "precip": "0"
-      },
-      {
-        "low": "53",
-        "high": "66",
-        "skycodeday": "30",
-        "skytextday": "Partly Cloudy",
-        "date": "2014-06-06",
-        "day": "Friday",
-        "shortday": "Fri",
-        "precip": "0"
-      },
-      {
-        "low": "54",
-        "high": "70",
-        "skycodeday": "30",
-        "skytextday": "Partly Cloudy",
-        "date": "2014-06-07",
+        "low": "47",
+        "high": "59",
+        "skycodeday": "11",
+        "skytextday": "Rain",
+        "date": "2017-03-04",
         "day": "Saturday",
         "shortday": "Sat",
-        "precip": "0"
+        "precip": ""
       },
       {
-        "low": "54",
-        "high": "74",
+        "low": "46",
+        "high": "52",
         "skycodeday": "34",
         "skytextday": "Mostly Sunny",
-        "date": "2014-06-08",
+        "date": "2017-03-05",
         "day": "Sunday",
         "shortday": "Sun",
-        "precip": "0"
+        "precip": "40"
       },
       {
-        "low": "54",
-        "high": "69",
-        "skycodeday": "30",
-        "skytextday": "Partly Cloudy",
-        "date": "2014-06-09",
+        "low": "47",
+        "high": "56",
+        "skycodeday": "28",
+        "skytextday": "Mostly Cloudy",
+        "date": "2017-03-06",
         "day": "Monday",
         "shortday": "Mon",
-        "precip": "0"
+        "precip": "60"
+      },
+      {
+        "low": "49",
+        "high": "58",
+        "skycodeday": "28",
+        "skytextday": "Mostly Cloudy",
+        "date": "2017-03-07",
+        "day": "Tuesday",
+        "shortday": "Tue",
+        "precip": "10"
+      },
+      {
+        "low": "52",
+        "high": "62",
+        "skycodeday": "32",
+        "skytextday": "Sunny",
+        "date": "2017-03-08",
+        "day": "Wednesday",
+        "shortday": "Wed",
+        "precip": "10"
       }
     ]
   }
@@ -109,17 +108,17 @@ weather.find({search: 'San Francisco, CA', degreeType: 'F'}, function(err, resul
 */
 ```
 
-### Notes
+## Notes
 
-* It uses `weather.service.msn.com`
+- It uses `weather.service.msn.com`
 
-### License
+## License
 
 Licensed under The MIT License (MIT)  
 For the full copyright and license information, please view the LICENSE.txt file.
 
 [npm-url]: http://npmjs.org/package/weather-js
-[npm-image]: https://badge.fury.io/js/weather-js.png
+[npm-image]: https://badge.fury.io/js/weather-js.svg
 
-[travis-url]: https://travis-ci.org/cmfatih/weather
-[travis-image]: https://travis-ci.org/cmfatih/weather.svg?branch=master
+[travis-url]: https://travis-ci.org/devfacet/weather
+[travis-image]: https://travis-ci.org/devfacet/weather.svg?branch=master

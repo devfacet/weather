@@ -1,10 +1,9 @@
 /*
  * Weather
- * Copyright (c) 2014 Fatih Cetinkaya (http://github.com/cmfatih/weather)
  * For the full copyright and license information, please view the LICENSE.txt file.
  */
 
-/* jslint node: true */
+/* jslint node: true, sub: true */
 'use strict';
 
 var request = require('request'),
@@ -12,7 +11,7 @@ var request = require('request'),
     xml2JS  = require('xml2js');
 
 // Init the module
-exports = module.exports = (function() {
+module.exports = (function() {
 
   var xmlParser     = new xml2JS.Parser({charkey: 'C$', attrkey: 'A$', explicitArray: true}),
       defLang       = 'en-US',
