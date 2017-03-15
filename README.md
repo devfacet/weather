@@ -24,88 +24,88 @@ weather.find({search: 'San Francisco, CA', degreeType: 'F'}, function(err, resul
 
   console.log(JSON.stringify(result, null, 2));
 });
-/*
+```
+```bash
 [
   {
     "location": {
       "name": "San Francisco, CA",
       "lat": "37.777",
       "long": "-122.42",
-      "timezone": "-8",
+      "timezone": "-7",
       "alert": "",
       "degreetype": "F",
       "imagerelativeurl": "http://blob.weather.microsoft.com/static/weather4/en-us/"
     },
     "current": {
-      "temperature": "50",
-      "skycode": "30",
-      "skytext": "Partly Sunny",
-      "date": "2017-03-05",
-      "observationtime": "16:35:00",
-      "observationpoint": "San Francisco, CA",
-      "feelslike": "45",
-      "humidity": "58",
-      "winddisplay": "13 mph West",
-      "day": "Sunday",
-      "shortday": "Sun",
-      "windspeed": "13 mph",
-      "imageUrl": "http://blob.weather.microsoft.com/static/weather4/en-us/law/30.gif"
+      "temperature": "70",
+      "skycode": "32",
+      "skytext": "Sunny",
+      "date": "2017-03-14",
+      "observationtime": "13:15:00",
+      "observationpoint": "San Francisco, California",
+      "feelslike": "70",
+      "humidity": "59",
+      "winddisplay": "3 mph West",
+      "day": "Tuesday",
+      "shortday": "Tue",
+      "windspeed": "3 mph",
+      "imageUrl": "http://blob.weather.microsoft.com/static/weather4/en-us/law/32.gif"
     },
     "forecast": [
       {
-        "low": "47",
-        "high": "59",
-        "skycodeday": "11",
-        "skytextday": "Rain",
-        "date": "2017-03-04",
-        "day": "Saturday",
-        "shortday": "Sat",
+        "low": "52",
+        "high": "69",
+        "skycodeday": "31",
+        "skytextday": "Clear",
+        "date": "2017-03-13",
+        "day": "Monday",
+        "shortday": "Mon",
         "precip": ""
       },
       {
-        "low": "46",
-        "high": "52",
+        "low": "52",
+        "high": "70",
         "skycodeday": "34",
         "skytextday": "Mostly Sunny",
-        "date": "2017-03-05",
-        "day": "Sunday",
-        "shortday": "Sun",
-        "precip": "40"
-      },
-      {
-        "low": "47",
-        "high": "56",
-        "skycodeday": "28",
-        "skytextday": "Mostly Cloudy",
-        "date": "2017-03-06",
-        "day": "Monday",
-        "shortday": "Mon",
-        "precip": "60"
-      },
-      {
-        "low": "49",
-        "high": "58",
-        "skycodeday": "28",
-        "skytextday": "Mostly Cloudy",
-        "date": "2017-03-07",
+        "date": "2017-03-14",
         "day": "Tuesday",
         "shortday": "Tue",
         "precip": "10"
       },
       {
-        "low": "52",
-        "high": "62",
-        "skycodeday": "32",
-        "skytextday": "Sunny",
-        "date": "2017-03-08",
+        "low": "56",
+        "high": "63",
+        "skycodeday": "26",
+        "skytextday": "Cloudy",
+        "date": "2017-03-15",
         "day": "Wednesday",
         "shortday": "Wed",
+        "precip": "20"
+      },
+      {
+        "low": "50",
+        "high": "64",
+        "skycodeday": "28",
+        "skytextday": "Mostly Cloudy",
+        "date": "2017-03-16",
+        "day": "Thursday",
+        "shortday": "Thu",
+        "precip": "10"
+      },
+      {
+        "low": "53",
+        "high": "67",
+        "skycodeday": "32",
+        "skytextday": "Sunny",
+        "date": "2017-03-17",
+        "day": "Friday",
+        "shortday": "Fri",
         "precip": "10"
       }
     ]
   }
 ]
-*/
 ```
 
 ## Notes
