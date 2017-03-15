@@ -15,7 +15,7 @@ describe('weather', function() {
       weather.find({search: 'San Francisco, CA', degreeType: 'F'}, function(err, result) {
         if(err) return done(err);
 
-        expect(err).to.be.equal(undefined);
+        expect(err).to.be.equal(null);
 
         expect(result).to.be.a('array');
         expect(result).to.have.property('length').to.be.equal(1);
@@ -64,10 +64,10 @@ describe('weather', function() {
     });
 
     it('should find multiple locations with weather information', function(done) {
-      weather.find({search: 'San Francisco', degreeType: 'F'}, function(err, result) {
+      weather.find({search: 'Washington', degreeType: 'F'}, function(err, result) {
         if(err) return done(err);
 
-        expect(err).to.be.equal(undefined);
+        expect(err).to.be.equal(null);
         expect(result).to.be.a('array');
         expect(result).to.have.property('length').to.be.above(1);
         done();
@@ -79,6 +79,17 @@ describe('weather', function() {
         if(!err) return done('No error!');
 
         expect(result).to.be.equal(undefined);
+        done();
+      });
+    });
+
+    it('should not return any address (bad address)', function(done) {
+      weather.find({search: '.'}, function(err, result) {
+        if(err) return done(err);
+
+        expect(err).to.be.equal(null);
+        expect(result).to.be.a('array');
+        expect(result).to.have.property('length').to.be.equal(0);
         done();
       });
     });
