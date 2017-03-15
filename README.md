@@ -1,6 +1,6 @@
 # Weather
 
-[![NPM][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
+[![NPM][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage][coverage-image]][coverage-url]
 
 Weather is a module for obtaining weather information.
 
@@ -122,3 +122,6 @@ For the full copyright and license information, please view the LICENSE.txt file
 
 [travis-url]: https://travis-ci.org/devfacet/weather
 [travis-image]: https://travis-ci.org/devfacet/weather.svg?branch=master
+
+[coverage-url]: https://coveralls.io/github/devfacet/weather?branch=master
+[coverage-image]: https://coveralls.io/repos/devfacet/weather/badge.svg?branch=master&service=github

@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.0.0 (2017-03-14)
+
+- **[BREAKING CHANGE]** Returns empty array (no error) if the given address is not found
+- Add linting, dependency check and code coverage
+- Improve tests
+- Improve address and error handling
+
 ## 1.0.3 (2017-03-05)
 
 - Maintenance
